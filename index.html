@@ -193,12 +193,14 @@
   URL recomendada: /quadros/atelie/arte-sob-medida
 
   PENDÊNCIAS ANTES DE PUBLICAR:
-  1) Substituir os placeholders por fotografia real de ASM001/ASM003 e imagens dos casos.
+  1) HERO: usar exclusivamente ASM001 “A Direção Pedida” em parede real.
   2) Inserir o vídeo final no Bloco 3.
-  3) Confirmar autorização da Rogéria antes de ativar o Caso 3 (ASM001).
+  3) BLOCO PROVA: permanece DESATIVADO até autorização escrita dos clientes Zuper e Sal da Terra.
+     Antes de ativar, solicitar ao responsável a versão vigente da leitura da obra Zuper.
   4) Confirmar redação/lastro do registro FBN antes de ativar o item 05.
   5) Confirmar faixa de investimento; R$ 3.999 permanece comentado até validação.
   6) Trocar # pelos links reais de compra/escala e WhatsApp.
+  7) A especificação pública do chassi deve permanecer alinhada à homologação vigente de produção.
 -->
 
 <div class="eh-arte">
@@ -220,8 +222,8 @@
       </div>
     </div>
     <div class="eh-hero-image">
-      <!-- SUBSTITUIR ESTE PLACEHOLDER por fotografia real de ASM001 ou ASM003 em parede real. -->
-      <div class="eh-media-placeholder">Inserir fotografia real da obra em parede<br>ASM001 “A Direção Pedida” ou ASM003 “Zuper”</div>
+      <!-- HERO APROVADO: substituir este placeholder por fotografia real de ASM001 “A Direção Pedida” em parede real. -->
+      <div class="eh-media-placeholder">Inserir fotografia real da obra em parede<br>ASM001 “A Direção Pedida”</div>
       <span class="eh-image-label">Arte Sob Medida · Espelhos Home</span>
     </div>
   </section>
@@ -247,12 +249,17 @@
     </div>
   </section>
 
-  <!-- BLOCO 4 · TRÊS OBRAS, TRÊS HISTÓRIAS -->
-  <section class="eh-section eh-cases">
+  <!-- BLOCO 4 · PROVA — DESATIVADO
+       NÃO REMOVER O ATRIBUTO hidden ATÉ:
+       1) autorização escrita de Zuper e Sal da Terra;
+       2) entrada da versão VIGENTE da leitura da Zuper.
+       Para ligar o bloco: remover apenas o atributo hidden depois dessas validações.
+  -->
+  <section class="eh-section eh-cases" id="prova" hidden data-status="aguardando-autorizacoes">
     <div class="eh-container">
       <div class="eh-cases-intro">
         <span class="eh-label">Prova</span>
-        <h2 class="eh-title-small">Três obras que já existem</h2>
+        <h2 class="eh-title-small">Duas obras que já existem</h2>
         <p class="eh-text">Cada uma nasceu de um texto. Veja o texto, a obra e como se lê.</p>
       </div>
 
@@ -274,10 +281,12 @@
           </div>
           <div>
             <span class="eh-case-kicker">Como se lê</span>
-            <div class="eh-reading"><strong>A Luz, embaixo à esquerda</strong><p>Olhe o ponto mais claro da obra: ele está embaixo, à esquerda, e a luz sai de dentro do escuro. É a pessoa — o começo de tudo, porque a Zuper diz que pessoas fortes formam famílias fortes.</p></div>
-            <div class="eh-reading"><strong>O Caminho da Luz</strong><p>A luz sobe daquele ponto e atravessa a tela na diagonal, clareando o azul aos poucos. É o <em>constroem</em> da declaração: o que vem depois só existe apoiado no que veio antes.</p></div>
-            <div class="eh-reading"><strong>O Clarão Maior, no Alto</strong><p>A parte mais aberta e mais clara está longe do começo, no alto à direita. É a prosperidade — e ela está longe porque, como diz o texto, é consequência natural, não ponto de partida.</p></div>
-            <p class="eh-case-close">A luz nasceu embaixo e chegou até em cima. Ninguém acendeu ela lá em cima: ela chegou lá porque começou aqui.</p>
+            <!-- BLOQUEIO DE CURADORIA: NÃO PUBLICAR a leitura anterior da Zuper.
+                 Antes de ativar o bloco PROVA, solicitar a versão vigente e substituir este aviso interno. -->
+            <div class="eh-reading eh-reading-pending">
+              <strong>Leitura em revisão de curadoria</strong>
+              <p>Conteúdo deliberadamente retirado desta versão para evitar publicação da redação anterior.</p>
+            </div>
           </div>
         </div>
       </article>
@@ -307,18 +316,6 @@
         </div>
       </article>
 
-      <!--
-      CASO 3 · ASM001 — A DIREÇÃO PEDIDA
-      BLOQUEADO PARA PUBLICAÇÃO ATÉ AUTORIZAÇÃO EXPRESSA DA ROGÉRIA.
-      Quando aprovado, inserir aqui o caso integral, sem editar/amenizar o texto de origem.
-
-      O QUE CHEGOU: “Antes de decidir, eu peço direção.”
-      A OBRA: ASM001 · 2:1 · verde profundo e ouro champanhe
-      COMO SE LÊ:
-      - A Raiz — embaixo, à esquerda: A mancha mais escura e mais densa da obra. São os anos difíceis, que vieram primeiro.
-      - Os Caminhos: Do escuro sobem fios de ouro que o olho consegue seguir do começo ao fim. É a direção pedida antes de cada decisão.
-      - A Convergência: No alto, à direita, fora do centro: a luz onde os caminhos se encontram. É o que veio depois — e que não foi mérito próprio.
-      -->
 
       <p class="eh-signature">A obra responde a uma história. Trocada a história, nada nela se sustenta.</p>
     </div>
@@ -333,7 +330,7 @@
         <div class="eh-step"><div class="eh-step-number">01</div><div class="eh-step-text"><strong>Você escreve</strong>Cinco perguntas. A primeira é a sua história — o resto é sobre a parede, a luz e o que você não quer. Leva de dez a vinte minutos. Se preferir contar em vez de escrever, é só chamar no WhatsApp.</div></div>
         <div class="eh-step"><div class="eh-step-number">02</div><div class="eh-step-text"><strong>A curadoria lê</strong>Sua história é lida e traduzida em decisões de forma: composição, paleta, densidade, escala. Cada decisão responde a um trecho identificável do que você escreveu.</div></div>
         <div class="eh-step"><div class="eh-step-number">03</div><div class="eh-step-text"><strong>A obra é construída</strong>A obra passa por rodadas de aprovação interna até que cada elemento da tela tenha origem declarada. Obra que não fecha com a história volta para o começo.</div></div>
-        <div class="eh-step"><div class="eh-step-number">04</div><div class="eh-step-text"><strong>Chega a obra e o dossiê</strong>A obra pronta, com o dossiê impresso que registra sua história, mostra como ler cada elemento e certifica a exclusividade.</div></div>
+        <div class="eh-step"><div class="eh-step-number">04</div><div class="eh-step-text"><strong>Chega a obra e o dossiê</strong>A obra pronta chega com o dossiê impresso que registra sua história e mostra como ler cada elemento, e com o certificado que registra o seu exemplar.</div></div>
       </div>
     </div>
   </section>
@@ -398,12 +395,13 @@
     <div class="eh-container">
       <span class="eh-label">Autenticidade</span>
       <h2 class="eh-title-small">O que chega junto com a obra</h2>
-      <p class="eh-text">A peça não vem sozinha. Ela vem acompanhada dos elementos que registram sua origem, sua leitura e sua exclusividade.</p>
+      <p class="eh-text">A peça não vem sozinha. Ela vem acompanhada dos elementos que registram sua origem, sua leitura e o seu exemplar.</p>
       <div class="eh-benefits">
+        <!-- REVISÃO PRÉ-PUBLICAÇÃO: manter esta redação exatamente alinhada à homologação vigente da produção. -->
         <article class="eh-benefit"><span class="eh-benefit-number">01</span><h3>A obra</h3><p>Canvas Fine Art 100% algodão · acabamento fosco · primer acrílico em três camadas. Chassi de alumínio de alta resistência · travamento mecânico, sem solda · não cede, não empena e não sofre com variação de umidade.</p></article>
         <article class="eh-benefit"><span class="eh-benefit-number">02</span><h3>O dossiê de curadoria</h3><p>Impresso, registra sua história, a leitura da obra, a paleta medida e as especificações.</p></article>
         <article class="eh-benefit"><span class="eh-benefit-number">03</span><h3>A placa de autenticidade</h3><p>Alumínio anodizado 131 × 81 mm, gravada a laser, com o número de acervo.</p></article>
-        <article class="eh-benefit"><span class="eh-benefit-number">04</span><h3>O certificado de exclusividade</h3><p>A obra não é reproduzida, nem vendida a outro cliente, nem entra no catálogo.</p></article>
+        <article class="eh-benefit"><span class="eh-benefit-number">04</span><h3>O certificado de exclusividade</h3><p>A concepção é autoral da casa; o exemplar é seu. A obra não entra no catálogo, não é oferecida a terceiros pela Espelhos Home, e nenhuma réplica existe sem sua autorização por escrito.</p></article>
         <!--
         ITEM 05 — NÃO PUBLICAR COMO FATO CONSUMADO ATÉ VALIDAÇÃO DO TEMPO VERBAL / CESSÃO:
         <article class="eh-benefit"><span class="eh-benefit-number">05</span><h3>Registro na Fundação Biblioteca Nacional</h3><p>Registro de obra em processo junto à Fundação Biblioteca Nacional.</p></article>
@@ -428,7 +426,7 @@
             <small>Conforme escala e acabamento.</small>
           </div>
         -->
-        <p style="font-size:24px; margin-top:28px;">De <strong>80 × 80 cm</strong><br>a <strong>4,50 × 1,50 m</strong></p>
+        <p class="eh-text" style="margin-top:28px;">Trabalhamos também com medidas fora da grade — fale com a gente com a medida da sua parede.</p>
         <div class="eh-formats"><span class="eh-format">1:1</span><span class="eh-format">2:1</span><span class="eh-format">3:1</span></div>
         <p class="eh-scale-note">A medida escolhida é a referência inicial. A proporção final é confirmada com base na parede e na composição antes da produção.</p>
         <!-- TROCAR # PELO LINK REAL DE ESCALAS / PRODUTO -->
@@ -445,7 +443,8 @@
       <div class="eh-faq-list">
         <details><summary>E se eu não souber escrever direito?</summary><div class="eh-answer">Não existe jeito certo. Escreva como você contaria para alguém sentado do seu lado. A curadoria trabalha o texto; erro de vírgula não muda nada. E, se preferir falar em vez de escrever, chame no WhatsApp: a gente escreve junto.</div></details>
         <details><summary>Posso escrever pouco?</summary><div class="eh-answer">Pode. O que conta não é o tamanho, é a precisão. Uma frase verdadeira rende mais que uma página genérica. “Antes de decidir, eu peço direção” tem 36 caracteres e virou uma obra inteira.</div></details>
-        <details><summary>E se eu não gostar da obra?</summary><div class="eh-answer">A obra passa por aprovação interna rigorosa antes de existir em tela. Se algum elemento não fechar com sua história, a obra volta para o começo — isso acontece internamente e é parte do método, não exceção.</div></details>
+        <!-- FAQ TEMPORARIAMENTE RETIRADA: “E se eu não gostar da obra?”
+             Resposta em validação jurídica. Reativar somente após aprovação da advogada. -->
         <details><summary>Posso escolher as cores?</summary><div class="eh-answer">Você nos diz o que não quer ver e escolhe uma referência de temperamento, se quiser. A partir daí, a paleta é decisão da curadoria, calculada contra a luz e o ambiente que você indicar.</div></details>
         <details><summary>Onde eu conto a minha história?</summary><div class="eh-answer">Depois da compra, você recebe por e-mail ou WhatsApp o acesso às cinco perguntas. Assim, o texto íntimo só é enviado quando a contratação já está feita.</div></details>
         <details><summary>Quando começa o prazo de produção?</summary><div class="eh-answer">A contagem do prazo de produção começa após o envio das cinco respostas. Antes de produzir, a equipe confirma os dados técnicos necessários para a obra e para a escala.</div></details>
@@ -453,7 +452,7 @@
         <details><summary>Vocês escrevem a frase no quadro?</summary><div class="eh-answer">Não. A obra é abstrata. Sua frase, versículo ou história não aparece escrita: ela é traduzida em imagem.</div></details>
         <details><summary>Por que vocês perguntam sobre o ambiente?</summary><div class="eh-answer">O local onde a obra será instalada ajuda a curadoria a compreender escala, proporção, luz e presença visual.</div></details>
         <details><summary>Vocês usam inteligência artificial?</summary><div class="eh-answer">Usamos as ferramentas que existem hoje, inclusive inteligência artificial, como qualquer ateliê usa as ferramentas do seu tempo. O que define a obra é a curadoria — a decisão do que entra, do que sai e do que a obra precisa dizer. A ferramenta não decide nada.</div></details>
-        <details><summary>Fazem em outro tamanho?</summary><div class="eh-answer">Fazemos customizado, centímetro a centímetro, respeitando o painel máximo de produção. Fale com a gente com a medida da parede.</div></details>
+        <details><summary>Fazem em outro tamanho?</summary><div class="eh-answer">Trabalhamos também com medidas fora da grade — fale com a gente com a medida da sua parede.</div></details>
       </div>
     </div>
   </section>
